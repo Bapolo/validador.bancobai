@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Main() {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 md:px-4 md:pt-20 md:max-w-[80%] m-auto">
+    <main className="md:grid md:grid-cols-2 md:px-4 md:pt-20 md:max-w-[80%] m-auto">
       <section className="hidden md:block">
         <Image 
         src="/iirj.jpn"
