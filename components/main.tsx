@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Main() {
   return (
-    <main className="md:grid md:grid-cols-2 md:px-4 md:pt-20 md:max-w-[80%] m-auto w-full ">
+    <main className="grid grid-cols-1 md:grid-cols-2 md:px-4 md:pt-20 md:max-w-[80%] m-auto">
       <section className="hidden md:block">
         <Image 
         src="/iirj.jpn"
@@ -13,7 +13,7 @@ export default function Main() {
       </section>
 
       <section>
-        <div className="p-2 md:p-0 md:mb-6">
+        <div className="p-2 md:p-0 mb-6">
           <p className="text-[#001a48] font-semibold text-[1.4rem] md:text-4xl">
             Insira a chave e o pin que se encontram no seu comprovativo para
             proceder à validação.
