@@ -13,7 +13,7 @@ export default function Main() {
       </section>
 
       <section>
-        <div className="p-4 md:p-0 mb-6">
+        <div className="p-4 md:p-0 mb-2">
           <p className="text-[#001a48] font-semibold text-[1.4rem] md:text-4xl">
             Insira a chave e o pin que se encontram no seu comprovativo para
             proceder à validação.
