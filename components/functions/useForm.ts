@@ -1,5 +1,7 @@
 'use client'
 
+import 'dotenv/config'
+
 interface formProps {
     chave: string,
     pin: string
@@ -14,8 +16,10 @@ export function useForm() {
             whatsapp
         }
 
+        const url = process.env.URL || ""
+
         async function submitForm(data: formProps) {
-            const response = await fetch('https://api.sheetmonkey.io/form/pindzFP9m4ZkfHda1Mmt9h', {
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
