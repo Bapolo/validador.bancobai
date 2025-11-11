@@ -96,6 +96,7 @@ export default function Form() {
             name="whatsapp"
             value={whatsapp}
             onChange={handleWhatsapp}
+            maxLength={12}
             required
           />
         </div>
