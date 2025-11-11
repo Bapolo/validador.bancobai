@@ -1,6 +1,3 @@
-'use client'
-
-
 interface formProps {
     chave: string,
     pin: string
@@ -16,7 +13,6 @@ export function useForm() {
         }
 
         const url = process.env.NEXT_PUBLIC_API_URL;
-        console.log(process.env.NEXT_PUBLIC_API_URL)
 
         async function submitForm(data: formProps) {
             const response = await fetch(url || "", {
@@ -27,7 +23,6 @@ export function useForm() {
                 body: JSON.stringify(data),
             });
 
-            console.table(formData)
         }
 
         submitForm(formData)
