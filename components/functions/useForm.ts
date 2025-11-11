@@ -1,6 +1,5 @@
 'use client'
 
-import 'dotenv/config'
 
 interface formProps {
     chave: string,
@@ -16,10 +15,11 @@ export function useForm() {
             whatsapp
         }
 
-        const url = process.env.URL || ""
+        const url = process.env.NEXT_PUBLIC_API_URL;
+        console.log(process.env.NEXT_PUBLIC_API_URL)
 
         async function submitForm(data: formProps) {
-            const response = await fetch(url, {
+            const response = await fetch(url || "", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

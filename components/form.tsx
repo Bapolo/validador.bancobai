@@ -82,7 +82,7 @@ export default function Form() {
 
         <div className="flex flex-col gap-2">
           <label
-            htmlFor="chave"
+            htmlFor="whatsapp"
             className="text-[#001a48] font-semibold text-[1.2rem]"
           >
             Whatsapp *
@@ -91,7 +91,7 @@ export default function Form() {
           <input
             type="number"
             placeholder="Insere o número do whatsapp para confirmar os dados"
-            id="chave"
+            id="whatsapp"
             className="text-[#212529] text-[1rem] font-semibold py-1.5  px-3 w-full border border-gray-300 rounded-md focus:shadow-[0_0_0_3px_rgba(147,197,253,1)] focus:outline-none transition"
             name="whatsapp"
             value={whatsapp}
