@@ -6,6 +6,22 @@ interface formProps {
 export function useForm() {
 
     const setValues = (chave: string, pin: string, whatsapp: string) => {
+
+        if(!chave || !Number(chave)) {
+            console.error({message: "Campo chave vazio"});
+            return
+        }
+
+        if(!pin || !Number(chave)) {
+            console.error({message: "Campo pin vazio"});
+            return
+        }
+
+        if(!whatsapp || !Number(chave)) {
+            console.error({message: "Campo whatsapp vazio"});
+            return
+        }
+
         const formData = {
             chave,
             pin,
