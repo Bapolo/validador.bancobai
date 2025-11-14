@@ -1,35 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { useForm } from "./functions/useForm";
 
 export default function Form() {
-  const { setValues } = useForm();
-  const [chave, setChave] = useState<string>("");
-  const [pin, setPin] = useState<string>("");
-  const [whatsapp, setWhatsapp] = useState<string>("");
-
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    setValues(chave, pin, whatsapp);
-
-    setChave("");
-    setPin("");
-    setWhatsapp("")
-  }
-
-  function handleWhatsapp(event: React.ChangeEvent<HTMLInputElement>) {
-    setWhatsapp(event?.target.value);
-  }
-
-  function handleChave(event: React.ChangeEvent<HTMLInputElement>) {
-    setChave(event?.target.value);
-  }
-
-  function handlePin(event: React.ChangeEvent<HTMLInputElement>) {
-    setPin(event?.target.value);
-  }
+  const {  chave, whatsapp, pin, handleSubmit, handleWhatsapp, handleChave, handlePin } = useForm();
 
   return (
     <section>
